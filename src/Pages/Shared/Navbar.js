@@ -5,9 +5,9 @@ const Navbar = () => {
   const menuItems = (
     <>
       <li>
-        {/* <Link className="text-xl" to="/home">
+        <Link className="text-xl" to="/home">
           Home
-        </Link> */}
+        </Link>
       </li>
 
       <li>
