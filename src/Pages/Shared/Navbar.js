@@ -23,7 +23,7 @@ const Navbar = () => {
         <Link to="about">About</Link>
       </li>
       <li>
-        <Link to="login">Login</Link>
+        {/* <Link to="login">Login</Link> */}
       </li>
     </>
   );
