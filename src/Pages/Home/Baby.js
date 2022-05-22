@@ -10,15 +10,15 @@ const Baby = () => {
           <h1 className="text-5xl font-bold mx-">
             Exceptional Dental Care, <br /> on Your Terms
           </h1>
-          {/* <p className="py-6">
+          <p className="py-6">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
-          </p> */}
-          <button className="btn btn-primary text-white font-bold bg-gradient-to-r from-secondary to-primary">
+          </p>
+          {/* <button className="btn btn-primary text-white font-bold bg-gradient-to-r from-secondary to-primary">
             Get Started
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
