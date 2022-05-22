@@ -16,9 +16,9 @@ const Baby = () => {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          {/* <button className="btn btn-primary text-white font-bold bg-gradient-to-r from-secondary to-primary">
+          <button className="btn btn-primary text-white font-bold bg-gradient-to-r from-secondary to-primary">
             Get Started
-          </button> */}
+          </button>
         </div>
       </div>
     </div>
