@@ -6,11 +6,11 @@ const Service = ({service, setTreatment}) => {
         <div class="card lg:max-w-lg bg-base-100 shadow-xl">
         <div class="card-body text-center">
           <h2 class="text-xl font-bold text-secondary">{name}</h2>
-          {/* <p>{
+          <p>{
               slots.length > 0
               ? <span>{slots[0]}</span> 
               :<span className='text-red-500'> Try another date.</span>
-              }</p> */}
+              }</p>
           <p>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} Available</p>
           <div class="card-actions justify-center">
             <label
