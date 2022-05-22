@@ -11,7 +11,7 @@ const Service = ({service, setTreatment}) => {
               ? <span>{slots[0]}</span> 
               :<span className='text-red-500'> Try another date.</span>
               }</p>
-          <p>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} Available</p>
+          {/* <p>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} Available</p> */}
           <div class="card-actions justify-center">
             <label
              for="booking-modal"
