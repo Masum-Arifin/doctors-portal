@@ -12,7 +12,7 @@ const MakeAppointment = () => {
       </div>
       <div className="flex-1">
         {/* <h3 className="text-3xl text-primary py-3">Appointment</h3> */}
-        {/* <h2 className="text-2xl text-white py-3">Make an Appointment Today</h2> */}
+        <h2 className="text-2xl text-white py-3">Make an Appointment Today</h2>
         <p className="text-white">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, corrupti.
           Nihil laboriosam ullam <br /> harum porro quos, quia veniam saepe corrupti
