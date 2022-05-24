@@ -21,9 +21,9 @@ const MakeAppointment = () => {
           iure unde doloremque perferendis mollitia excepturi eveniet totam.
           Quis, at?
         </p>
-        <div className="mt-8">
+        {/* <div className="mt-8">
         <PrimaryBtn>Get Started</PrimaryBtn>
-        </div>
+        </div> */}
       </div>
     </section>
   );
