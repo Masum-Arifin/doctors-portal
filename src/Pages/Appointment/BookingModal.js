@@ -23,7 +23,7 @@ const BookingModal = ({ date, setTreatment, treatment }) => {
             ✕
           </label>
           <h3 class="font-bold text-lg">Booking for: {name} </h3>
-          {/* <form
+          <form
             onSubmit={handleBooking}
             className="grid grid-cols-1 gap-3 justify-items-center mt-2"
           >
@@ -61,7 +61,7 @@ const BookingModal = ({ date, setTreatment, treatment }) => {
               value="Submit"
               class="btn btn-secondary w-full max-w-xs"
             />
-          </form> */}
+          </form>
         </div>
       </div>
     </div>
