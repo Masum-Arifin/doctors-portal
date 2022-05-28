@@ -38,12 +38,12 @@ const BookingModal = ({ date, setTreatment, treatment }) => {
                 <option value={slot}>{slot}</option>
               ))}
             </select>
-            <input
+            {/* <input
               type="text"
               name="name"
               placeholder="Your Name"
               class="input input-bordered w-full max-w-xs"
-            />
+            /> */}
             <input
               type="email"
               name="email"
