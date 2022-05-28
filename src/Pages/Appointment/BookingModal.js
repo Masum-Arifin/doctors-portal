@@ -50,12 +50,12 @@ const BookingModal = ({ date, setTreatment, treatment }) => {
               placeholder="Email Address"
               class="input input-bordered w-full max-w-xs"
             />
-            <input
+            {/* <input
               type="text"
               name="phone"
               placeholder="Phone Number"
               class="input input-bordered w-full max-w-xs"
-            />
+            /> */}
             <input
               type="submit"
               value="Submit"
