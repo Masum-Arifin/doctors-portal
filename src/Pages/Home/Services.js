@@ -5,26 +5,26 @@ import whitening from '../../assets/images/whitening.png'
 import Service from './Service';
 
 const Services = () => {
-    // const services =[
-    //     {
-    //         _id: 1,
-    //         name: 'Fluoride Treatment',
-    //         description: '',
-    //         img: fluoride
-    //     },
-    //     {
-    //         _id: 2,
-    //         name: 'Cavity Filling',
-    //         description: '',
-    //         img: cavity
-    //     },
-    //     {
-    //         _id: 3,
-    //         name: 'Teeth Whitening',
-    //         description: '',
-    //         img: whitening
-    //     }
-    // ]
+    const services =[
+        {
+            _id: 1,
+            name: 'Fluoride Treatment',
+            description: '',
+            img: fluoride
+        },
+        {
+            _id: 2,
+            name: 'Cavity Filling',
+            description: '',
+            img: cavity
+        },
+        {
+            _id: 3,
+            name: 'Teeth Whitening',
+            description: '',
+            img: whitening
+        }
+    ]
     return (
         <div className="my-28">
            <div className="text-center">
