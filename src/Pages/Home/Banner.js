@@ -5,8 +5,8 @@ import PrimaryBtn from "../Shared/PrimaryBtn";
 const Banner = () => {
   return (
     <div className="hero min-h-screen">
-      {/* <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src={chair} className="max-w-sm rounded-lg shadow-2xl" />
+      <div className="hero-content flex-col lg:flex-row-reverse">
+        <img src={chair} className="max-w-sm rounded-lg shadow-2xl" alt='' />
         <div>
           <h1 className="text-5xl font-bold">Your New Smile Starts Here</h1>
           <p className="py-6">
@@ -16,7 +16,7 @@ const Banner = () => {
           </p>
           <PrimaryBtn>Get Starts</PrimaryBtn>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
