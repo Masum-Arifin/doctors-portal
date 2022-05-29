@@ -14,12 +14,12 @@ const Contact = () => {
         <h1 className='text-4xl'>Stay connected with us</h1>
       </div>
       <div className='grid grid-cols-1 justify-items-center gap-5'>
-        <input
+        {/* <input
           type='text'
           placeholder='Email Address'
           className='input w-full max-w-md'
         />
-        <input
+        <input */}
           type='text'
           placeholder='Subject'
           className='input w-full max-w-md'
