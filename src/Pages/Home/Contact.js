@@ -29,7 +29,7 @@ const Contact = () => {
           placeholder='Your message'
           rows={6}
         ></textarea> */}
-        <PrimaryBtn>Submit</PrimaryBtn>
+        {/* <PrimaryBtn>Submit</PrimaryBtn> */}
       </div>
     </div>
   );
