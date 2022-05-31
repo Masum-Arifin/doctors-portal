@@ -5,7 +5,7 @@ const Navbar = () => {
   const menuItems = (
     <>
       <li>
-        <Link to="/home">Home</Link>
+        <Link className="text-xl" to="/home">Home</Link>
       </li>
 
       <li>
@@ -52,7 +52,7 @@ const Navbar = () => {
               {menuItems}
           </ul>
         </div>
-        <a class="btn btn-ghost normal-case text-xl">Doctors portal</a>
+        <a class="btn btn-ghost normal-case text-2xl">Doctors portal</a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal p-0">
