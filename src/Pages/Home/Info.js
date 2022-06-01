@@ -12,16 +12,16 @@ const Info = () => {
         bgClass="bg-gradient-to-r from-secondary to-primary"
         img={marker}
       ></InfoCard>
-      {/* <InfoCard
+      <InfoCard
         cardTitle="Our Location"
         bgClass="bg-[#3a4256]"
         img={phone}
-      ></InfoCard> */}
-      <InfoCard
+      ></InfoCard>
+      {/* <InfoCard
         cardTitle="Contact Us"
         bgClass="bg-gradient-to-r from-secondary to-primary"
         img={clock}
-      ></InfoCard>
+      ></InfoCard> */}
     </div>
   );
 };
