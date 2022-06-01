@@ -19,11 +19,11 @@ const Contact = () => {
           placeholder='Email Address'
           className='input w-full max-w-md'
         />
-        {/* <input
+        <input
           type='text'
           placeholder='Subject'
           className='input w-full max-w-md'
-        /> */}
+        />
         <textarea
           className='textarea w-full max-w-md'
           placeholder='Your message'
