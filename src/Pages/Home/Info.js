@@ -17,11 +17,11 @@ const Info = () => {
         bgClass="bg-[#3a4256]"
         img={phone}
       ></InfoCard>
-      {/* <InfoCard
+      <InfoCard
         cardTitle="Contact Us"
         bgClass="bg-gradient-to-r from-secondary to-primary"
         img={clock}
-      ></InfoCard> */}
+      ></InfoCard>
     </div>
   );
 };
