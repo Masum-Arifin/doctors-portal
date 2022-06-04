@@ -7,7 +7,7 @@ const Footer = () => {
       style={{ background: `url(${footer})`, backgroundSize: "cover" }}
       className="p-10 "
     >
-      <div className="footer">
+      <div className="footer mt-20">
         <div>
           <span className="footer-title">Services</span>
           <a className="link link-hover">Branding</a>
@@ -30,7 +30,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="my-20 text-center">
-        <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
+        <p>Copyright © 2022 - All right reserved </p>
+        <p className="mt-5 text-primary">Developed By Masum Arifin</p>
       </div>
     </footer>
   );
