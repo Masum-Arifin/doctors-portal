@@ -15,10 +15,10 @@ const Review = ({ review }) => {
               <img src={review.img} alt="" />
             </div>
           </div>
-          {/* <div>
+          <div>
             <h4 className="text-xl">{review.name}</h4>
             <p>{review.location}</p>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
