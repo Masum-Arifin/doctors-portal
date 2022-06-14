@@ -82,7 +82,7 @@ const Login = () => {
                                 })}
                             />
                             <label className="label">
-                                {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
+                                {/* {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>} */}
                                 {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
                             </label>
                         </div>
