@@ -63,9 +63,9 @@ const Login = () => {
                     <form onSubmit={handleSubmit(onSubmit)}>
 
                         <div className="form-control w-full max-w-xs">
-                            <label className="label">
+                            {/* <label className="label">
                                 <span className="label-text">Email</span>
-                            </label>
+                            </label> */}
                             <input
                                 type="email"
                                 placeholder="Your Email"
