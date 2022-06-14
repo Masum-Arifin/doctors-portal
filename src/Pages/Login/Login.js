@@ -90,7 +90,7 @@ const Login = () => {
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            {/* <input
+                            <input
                                 type="password"
                                 placeholder="Password"
                                 className="input input-bordered w-full max-w-xs"
@@ -104,7 +104,7 @@ const Login = () => {
                                         message: 'Must be 6 characters or longer'
                                     }
                                 })}
-                            /> */}
+                            />
                             <label className="label">
                                 {errors.password?.type === 'required' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
                                 {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
