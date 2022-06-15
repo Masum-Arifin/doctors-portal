@@ -43,7 +43,7 @@ const Login = () => {
         }
     }, [user, gUser, from, navigate])
 
-    if (true || loading || gLoading) {
+    if ( loading || gLoading) {
         return <Loading></Loading>
     }
 
