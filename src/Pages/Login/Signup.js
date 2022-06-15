@@ -25,13 +25,13 @@ const SignUp = () => {
         return <Loading></Loading>
     }
 
-    // if (error || gError || updateError) {
-    //     signInError = <p className='text-red-500'><small>{error?.message || gError?.message || updateError?.message}</small></p>
-    // }
+    if (error || gError || updateError) {
+        signInError = <p className='text-red-500'><small>{error?.message || gError?.message || updateError?.message}</small></p>
+    }
 
-    // if (user || gUser) {
-    //     console.log(user || gUser);
-    // }
+    if (user || gUser) {
+        console.log(user || gUser);
+    }
 
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
