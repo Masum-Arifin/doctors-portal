@@ -46,7 +46,7 @@ const SignUp = () => {
                     <h2 className="text-center text-2xl font-bold">Sign Up</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
 
-                        <div className="form-control w-full max-w-xs">
+                        {/* <div className="form-control w-full max-w-xs">
                             <label className="label">
                                 <span className="label-text">Your Name</span>
                             </label>
@@ -64,7 +64,7 @@ const SignUp = () => {
                             <label className="label">
                                 {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
                             </label>
-                        </div>
+                        </div> */}
 
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
