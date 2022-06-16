@@ -120,10 +120,10 @@ const SignUp = () => {
                     </form>
                     <p><small>Already have an account? <Link className='text-primary' to="/login">Please login</Link></small></p>
                     <div className="divider">OR</div>
-                    <button
+                    {/* <button
                         onClick={() => signInWithGoogle()}
                         className="btn btn-outline"
-                    >Continue with Google</button>
+                    >Continue with Google</button> */}
                 </div>
             </div>
         </div >
