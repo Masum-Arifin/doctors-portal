@@ -74,16 +74,16 @@ const SignUp = () => {
                                 type="email"
                                 placeholder="Your Email"
                                 className="input input-bordered w-full max-w-xs"
-                                // {...register("email", {
-                                //     required: {
-                                //         value: true,
-                                //         message: 'Email is Required'
-                                //     },
-                                //     pattern: {
-                                //         value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                                //         message: 'Provide a valid Email'
-                                //     }
-                                // })}
+                                {...register("email", {
+                                    required: {
+                                        value: true,
+                                        message: 'Email is Required'
+                                    },
+                                    pattern: {
+                                        value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                                        message: 'Provide a valid Email'
+                                    }
+                                })}
                             />
                             <label className="label">
                                 {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
