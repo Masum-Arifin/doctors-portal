@@ -22,7 +22,6 @@ const BookingModal = ({ date, setTreatment, treatment }) => {
   }
     
 
-
     // to close the modal
     setTreatment(null);
   };
