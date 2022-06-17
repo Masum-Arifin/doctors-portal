@@ -5,7 +5,6 @@ import auth from './../../firebase.init';
 
 const BookingModal = ({ date, setTreatment, treatment }) => {
   const { _id, name, slots } = treatment;
-  const [user, loading, error] = useAuthState(auth);
   const formattedDate = format(date, 'PP');
   const handleBooking = (e) => {
     e.preventDefault();
