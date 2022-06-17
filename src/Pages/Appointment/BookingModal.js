@@ -1,12 +1,27 @@
 import React from "react";
 import { format } from "date-fns";
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from './../../firebase.init';
 
 const BookingModal = ({ date, setTreatment, treatment }) => {
   const { _id, name, slots } = treatment;
+  const [user, loading, error] = useAuthState(auth);
+  const formattedDate = format(date, 'PP');
   const handleBooking = (e) => {
     e.preventDefault();
     const slot = e.target.slot.value;
-    console.log(_id, name, slot);
+    
+    const booking = {
+      treatmentId: _id,
+      treatment: name,
+      date: formattedDate,
+      slot,
+      patient: user.email,
+      patientName: user.displayName,
+      phone: e.target.phone.value
+  }
+    
+
 
     // to close the modal
     setTreatment(null);
