@@ -10,6 +10,7 @@ const RequireAuth = ({children}) => {
     if(loading){
         return <Loading></Loading>
     }
+
     
     return (
         <div>
