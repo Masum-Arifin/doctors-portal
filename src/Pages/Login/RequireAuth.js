@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RequireAuth = () => {
+const RequireAuth = ({children}) => {
     return (
         <div>
             
