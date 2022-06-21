@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
   // const { _id, name, slots } = treatment;
   // const [user, loading, error] = useAuthState(auth);
   // const formattedDate = format(date, 'PP');
-  // const handleBooking = (e) => {
+  const handleBooking = (e) => {
     // e.preventDefault();
     // const slot = e.target.slot.value;
     
