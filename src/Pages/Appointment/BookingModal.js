@@ -9,7 +9,7 @@ import { toast } from 'react-toastify';
   // const [user, loading, error] = useAuthState(auth);
   // const formattedDate = format(date, 'PP');
   // const handleBooking = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     // const slot = e.target.slot.value;
     
 //     const booking = {
