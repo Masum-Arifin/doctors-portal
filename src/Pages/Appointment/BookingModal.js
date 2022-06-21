@@ -10,7 +10,7 @@ import { toast } from 'react-toastify';
   // const formattedDate = format(date, 'PP');
   // const handleBooking = (e) => {
     // e.preventDefault();
-    // const slot = e.target.slot.value;
+    const slot = e.target.slot.value;
     
 //     const booking = {
 //       treatmentId: _id,
