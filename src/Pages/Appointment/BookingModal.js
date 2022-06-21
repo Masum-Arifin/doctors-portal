@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 // const BookingModal = ({ date, setTreatment, treatment }) => {
   // const { _id, name, slots } = treatment;
   // const [user, loading, error] = useAuthState(auth);
-  const formattedDate = format(date, 'PP');
+  // const formattedDate = format(date, 'PP');
   // const handleBooking = (e) => {
     // e.preventDefault();
     // const slot = e.target.slot.value;
