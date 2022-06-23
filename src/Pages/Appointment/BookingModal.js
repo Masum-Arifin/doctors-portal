@@ -16,7 +16,7 @@ import { toast } from 'react-toastify';
       // treatmentId: _id,
       // treatment: name,
 //       date: formattedDate,
-//       slot,
+      slot,
 //       patient: user.email,
 //       patientName: user.displayName,
 //       phone: e.target.phone.value
