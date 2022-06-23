@@ -15,7 +15,7 @@ import { toast } from 'react-toastify';
     // const booking = {
       // treatmentId: _id,
       // treatment: name,
-      date: formattedDate,
+//       date: formattedDate,
 //       slot,
 //       patient: user.email,
 //       patientName: user.displayName,
