@@ -12,7 +12,7 @@ import { toast } from 'react-toastify';
     // e.preventDefault();
     // const slot = e.target.slot.value;
     
-//     const booking = {
+    const booking = {
 //       treatmentId: _id,
 //       treatment: name,
 //       date: formattedDate,
