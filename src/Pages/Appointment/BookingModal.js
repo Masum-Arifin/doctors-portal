@@ -17,7 +17,7 @@ import { toast } from 'react-toastify';
       // treatment: name,
 //       date: formattedDate,
 //       slot,
-      patient: user.email,
+      // patient: user.email,
 //       patientName: user.displayName,
 //       phone: e.target.phone.value
 //   }
