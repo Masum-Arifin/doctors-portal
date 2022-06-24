@@ -25,7 +25,7 @@ import { toast } from 'react-toastify';
     // fetch('http://localhost:5000/booking',{
       // method: 'POST',
       // headers:{
-        'content-type': 'application/json'
+        // 'content-type': 'application/json'
 //       },
 //       body: JSON.stringify(booking)
 //     })
