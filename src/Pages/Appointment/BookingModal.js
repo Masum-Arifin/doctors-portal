@@ -26,7 +26,7 @@ import { toast } from 'react-toastify';
       // method: 'POST',
       // headers:{
         // 'content-type': 'application/json'
-//       },
+      },
 //       body: JSON.stringify(booking)
 //     })
 //     .then(res => res.json())
