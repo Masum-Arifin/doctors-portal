@@ -22,7 +22,7 @@ import { toast } from 'react-toastify';
       // phone: e.target.phone.value
 //   }
     
-//     fetch('http://localhost:5000/booking',{
+    fetch('http://localhost:5000/booking',{
 //       method: 'POST',
 //       headers:{
 //         'content-type': 'application/json'
