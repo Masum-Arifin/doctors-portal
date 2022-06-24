@@ -19,7 +19,7 @@ import { toast } from 'react-toastify';
 //       slot,
       // patient: user.email,
       // patientName: user.displayName,
-      // phone: e.target.phone.value
+      phone: e.target.phone.value
 //   }
     
 //     fetch('http://localhost:5000/booking',{
