@@ -28,7 +28,7 @@ import { toast } from 'react-toastify';
         // 'content-type': 'application/json'
       // },
       // body: JSON.stringify(booking)
-//     })
+    })
 //     .then(res => res.json())
 //     .then(data => {
 //         // to close the modal
