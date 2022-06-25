@@ -32,7 +32,7 @@ import { toast } from 'react-toastify';
     // .then(res => res.json())
     // .then(data => {
         // to close the modal
-//         console.log(data);
+        console.log(data);
 //         setTreatment(null);
 //     })
 
