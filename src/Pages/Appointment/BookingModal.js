@@ -29,7 +29,7 @@ import { toast } from 'react-toastify';
       // },
       // body: JSON.stringify(booking)
     // })
-//     .then(res => res.json())
+    .then(res => res.json())
 //     .then(data => {
 //         // to close the modal
 //         console.log(data);
