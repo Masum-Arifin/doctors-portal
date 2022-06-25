@@ -33,7 +33,7 @@ import { toast } from 'react-toastify';
     // .then(data => {
         // to close the modal
         // console.log(data);
-        setTreatment(null);
+        // setTreatment(null);
 //     })
 
    
