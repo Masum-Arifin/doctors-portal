@@ -34,7 +34,7 @@ import { toast } from 'react-toastify';
         // to close the modal
         // console.log(data);
         // setTreatment(null);
-    })
+    // })
 
    
 //   };
