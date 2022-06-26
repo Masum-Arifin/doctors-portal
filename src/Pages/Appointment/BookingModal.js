@@ -35,7 +35,7 @@ import { toast } from 'react-toastify';
         // console.log(data);
         // setTreatment(null);
     // })
-//   };
+  };
 //   return (
 //     <div>
 //       <input type="checkbox" id="booking-modal" class="modal-toggle" />
