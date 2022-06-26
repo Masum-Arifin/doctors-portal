@@ -35,7 +35,6 @@ import { toast } from 'react-toastify';
         // console.log(data);
         // setTreatment(null);
     // })
-   
 //   };
 //   return (
 //     <div>
