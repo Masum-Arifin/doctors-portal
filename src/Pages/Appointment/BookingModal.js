@@ -38,7 +38,7 @@ import { toast } from 'react-toastify';
 //   };
 //   return (
     // <div>
-//       <input type="checkbox" id="booking-modal" class="modal-toggle" />
+      <input type="checkbox" id="booking-modal" class="modal-toggle" />
 //       <div class="modal modal-bottom sm:modal-middle">
 //         <div class="modal-box">
 //           <label
