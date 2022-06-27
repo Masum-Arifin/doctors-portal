@@ -42,7 +42,7 @@ import { toast } from 'react-toastify';
     //   <div class="modal modal-bottom sm:modal-middle">
         // <div class="modal-box">
         //   <label
-            for="booking-modal"
+            // for="booking-modal"
 //             class="btn btn-sm btn-circle absolute right-2 top-2"
 //           >
 //             ✕
