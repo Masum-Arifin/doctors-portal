@@ -46,7 +46,7 @@ import { toast } from 'react-toastify';
             // class="btn btn-sm btn-circle absolute right-2 top-2"
         //   >
             // ✕
-          </label>
+        //   </label>
 //           <h3 class="font-bold text-lg">Booking for: {name} </h3>
 //           <form
 //             onSubmit={handleBooking}
