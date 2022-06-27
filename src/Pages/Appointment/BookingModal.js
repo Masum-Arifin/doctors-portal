@@ -45,7 +45,7 @@ import { toast } from 'react-toastify';
             // for="booking-modal"
             // class="btn btn-sm btn-circle absolute right-2 top-2"
         //   >
-//             ✕
+            ✕
 //           </label>
 //           <h3 class="font-bold text-lg">Booking for: {name} </h3>
 //           <form
