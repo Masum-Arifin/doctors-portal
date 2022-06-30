@@ -54,7 +54,7 @@ import { toast } from 'react-toastify';
 //           >
 //             <input
 //               type="text"
-//               disabled
+              disabled
 //               value={format(date, "PP")}
 //               class="input input-bordered w-full max-w-xs"
 //             />
