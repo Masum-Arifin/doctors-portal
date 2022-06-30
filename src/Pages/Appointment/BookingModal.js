@@ -53,7 +53,7 @@ import { toast } from 'react-toastify';
 //             className="grid grid-cols-1 gap-3 justify-items-center mt-2"
 //           >
 //             <input
-//               type="text"
+              type="text"
 //               disabled
 //               value={format(date, "PP")}
 //               class="input input-bordered w-full max-w-xs"
