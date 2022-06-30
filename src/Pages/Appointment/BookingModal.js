@@ -52,7 +52,7 @@ import { toast } from 'react-toastify';
 //             onSubmit={handleBooking}
 //             className="grid grid-cols-1 gap-3 justify-items-center mt-2"
 //           >
-//             <input
+            <input
 //               type="text"
 //               disabled
 //               value={format(date, "PP")}
