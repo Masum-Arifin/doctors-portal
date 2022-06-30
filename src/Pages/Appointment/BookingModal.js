@@ -59,7 +59,7 @@ import { toast } from 'react-toastify';
 //               class="input input-bordered w-full max-w-xs"
 //             />
 //             <select name="slot" class="select select-bordered w-full max-w-xs">
-              {slots.map((slot) => (
+//               {slots.map((slot) => (
 //                 <option value={slot}>{slot}</option>
 //               ))}
 //             </select>
