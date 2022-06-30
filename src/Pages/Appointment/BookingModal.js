@@ -58,7 +58,7 @@ import { toast } from 'react-toastify';
 //               value={format(date, "PP")}
 //               class="input input-bordered w-full max-w-xs"
 //             />
-//             <select name="slot" class="select select-bordered w-full max-w-xs">
+            <select name="slot" class="select select-bordered w-full max-w-xs">
 //               {slots.map((slot) => (
 //                 <option value={slot}>{slot}</option>
 //               ))}
