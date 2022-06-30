@@ -49,7 +49,7 @@ import { toast } from 'react-toastify';
         //   </label>
         //   <h3 class="font-bold text-lg">Booking for: {name} </h3>
 //           <form
-//             onSubmit={handleBooking}
+            onSubmit={handleBooking}
 //             className="grid grid-cols-1 gap-3 justify-items-center mt-2"
 //           >
 //             <input
