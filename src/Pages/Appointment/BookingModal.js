@@ -56,7 +56,7 @@ import { toast } from 'react-toastify';
 //               type="text"
 //               disabled
 //               value={format(date, "PP")}
-//               class="input input-bordered w-full max-w-xs"
+              class="input input-bordered w-full max-w-xs"
 //             />
 //             <select name="slot" class="select select-bordered w-full max-w-xs">
 //               {slots.map((slot) => (
