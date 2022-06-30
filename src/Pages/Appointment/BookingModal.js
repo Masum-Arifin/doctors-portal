@@ -50,7 +50,7 @@ import { toast } from 'react-toastify';
         //   <h3 class="font-bold text-lg">Booking for: {name} </h3>
 //           <form
 //             onSubmit={handleBooking}
-            className="grid grid-cols-1 gap-3 justify-items-center mt-2"
+//             className="grid grid-cols-1 gap-3 justify-items-center mt-2"
 //           >
 //             <input
 //               type="text"
