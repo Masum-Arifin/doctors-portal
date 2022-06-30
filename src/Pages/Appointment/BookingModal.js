@@ -62,7 +62,7 @@ import { toast } from 'react-toastify';
 //               {slots.map((slot) => (
 //                 <option value={slot}>{slot}</option>
 //               ))}
-//             </select>
+            </select>
 //             <input
 //               type="text"
 //               name="name"
