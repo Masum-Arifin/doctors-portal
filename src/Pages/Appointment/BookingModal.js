@@ -67,7 +67,7 @@ import { toast } from 'react-toastify';
 //               type="text"
 //               name="name"
 //               placeholder="Your Name"
-//               class="input input-bordered w-full max-w-xs"
+              class="input input-bordered w-full max-w-xs"
 //             />
 //             <input
 //               type="email"
