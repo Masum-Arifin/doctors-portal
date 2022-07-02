@@ -66,7 +66,7 @@ import { toast } from 'react-toastify';
 //             <input
 //               type="text"
 //               name="name"
-//               placeholder="Your Name"
+              placeholder="Your Name"
 //               class="input input-bordered w-full max-w-xs"
 //             />
 //             <input
