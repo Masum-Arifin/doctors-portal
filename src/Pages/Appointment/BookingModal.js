@@ -69,7 +69,7 @@ import { toast } from 'react-toastify';
 //               placeholder="Your Name"
 //               class="input input-bordered w-full max-w-xs"
 //             />
-            <input
+//             <input
 //               type="email"
 //               name="email"
 //               placeholder="Email Address"
