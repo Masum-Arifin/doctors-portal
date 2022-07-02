@@ -63,7 +63,7 @@ import { toast } from 'react-toastify';
 //                 <option value={slot}>{slot}</option>
 //               ))}
 //             </select>
-            <input
+//             <input
 //               type="text"
 //               name="name"
 //               placeholder="Your Name"
