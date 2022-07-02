@@ -71,7 +71,7 @@ import { toast } from 'react-toastify';
 //             />
 //             <input
 //               type="email"
-//               name="email"
+              name="email"
 //               placeholder="Email Address"
 //               class="input input-bordered w-full max-w-xs"
 //             />
