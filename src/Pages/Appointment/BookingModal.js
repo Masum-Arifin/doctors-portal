@@ -65,7 +65,7 @@ import { toast } from 'react-toastify';
 //             </select>
 //             <input
 //               type="text"
-//               name="name"
+              name="name"
 //               placeholder="Your Name"
 //               class="input input-bordered w-full max-w-xs"
 //             />
