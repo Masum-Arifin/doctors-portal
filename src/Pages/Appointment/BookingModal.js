@@ -27,7 +27,7 @@ import { toast } from 'react-toastify';
       // headers:{
         // 'content-type': 'application/json'
       // },
-      body: JSON.stringify(booking)
+      // body: JSON.stringify(booking)
 //     })
 //     .then(res => res.json())
 //     .then(data => {
