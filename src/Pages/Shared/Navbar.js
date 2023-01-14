@@ -29,8 +29,9 @@ const Navbar = () => {
         <Link to="/contact">Contact</Link>
       </li>
       <li>
-        <Link to="about">About</Link>
+        <Link to="/about">About</Link>
       </li>
+      {user && <Link to="/dashboard">Dashboard</Link>}
       <li>
         {user ? (
           <button className="btn btn-ghost" onClick={logout}>
