@@ -39,6 +39,7 @@ function App() {
             </RequireAuth>
           }
         >
+        <Route index element={}></Route>  
           {" "}
         </Route>
         <Route path="/login" element={<Login />}></Route>
