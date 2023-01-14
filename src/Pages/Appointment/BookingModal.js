@@ -4,7 +4,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "./../../firebase.init";
 import { toast } from "react-toastify";
 
-const BookingModal = ({ date, treatment,setTreatment, refetch }) => {
+const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
   const { _id, name, slots } = treatment;
   const [user] = useAuthState(auth);
   const formattedDate = format(date, "PP");
@@ -72,7 +72,7 @@ const BookingModal = ({ date, treatment,setTreatment, refetch }) => {
               name="slot"
               className="select select-bordered w-full max-w-xs"
             >
-              {slots.map((slot, index) => (
+              {slots?.map((slot, index) => (
                 <option key={index} value={slot}>
                   {slot}
                 </option>

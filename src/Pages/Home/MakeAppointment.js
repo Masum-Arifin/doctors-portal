@@ -5,8 +5,10 @@ import PrimaryBtn from "../Shared/PrimaryBtn";
 
 const MakeAppointment = () => {
   return (
-    <section style={{ background:`url(${appointment})`}} 
-    className="flex justify-center items-center mt-44">
+    <section
+      style={{ background: `url(${appointment})` }}
+      className="flex justify-center items-center mt-44"
+    >
       <div className="flex-1 hidden lg:block">
         <img className="mt-[-100px]" src={doctor} alt="" />
       </div>
@@ -15,14 +17,14 @@ const MakeAppointment = () => {
         <h2 className="text-2xl text-white py-3">Make an Appointment Today</h2>
         <p className="text-white">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, corrupti.
-          Nihil laboriosam ullam <br /> harum porro quos, quia veniam saepe corrupti
-          Nihil laboriosam ullam harum porro <br /> quos, quia veniam saepe corrupti
-          Nihil laboriosam ullam harum porro quos, <br /> quia veniam saepe corrupti
-          iure unde doloremque perferendis mollitia excepturi eveniet totam.
-          Quis, at?
+          Nihil laboriosam ullam <br /> harum porro quos, quia veniam saepe
+          corrupti Nihil laboriosam ullam harum porro <br /> quos, quia veniam
+          saepe corrupti Nihil laboriosam ullam harum porro quos, <br /> quia
+          veniam saepe corrupti iure unde doloremque perferendis mollitia
+          excepturi eveniet totam. Quis, at?
         </p>
         <div className="mt-8">
-        <PrimaryBtn>Get Started</PrimaryBtn>
+          <PrimaryBtn>Get Started</PrimaryBtn>
         </div>
       </div>
     </section>

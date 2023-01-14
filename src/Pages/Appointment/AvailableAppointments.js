@@ -1,6 +1,6 @@
-import React, {useState } from "react";
-import { useQuery } from 'react-query'
-import Loading from '../Shared/Loading'; 
+import React, { useState } from "react";
+import { useQuery } from "react-query";
+import Loading from "../Shared/Loading";
 import { format } from "date-fns";
 import Service from "./Service";
 import BookingModal from "./BookingModal";
@@ -9,12 +9,19 @@ const AvailableAppointments = ({ date }) => {
   const [treatment, setTreatment] = useState(null);
 
   const formattedDate = format(date, "PP");
-  const {data: services , isLoading, refetch } =useQuery(['available', formattedDate], ()=>fetch(`http://http://localhost:5000/available?date=${formattedDate}`)
-      .then((res) => res.json()))
-      
-  if(isLoading){
-    return <Loading></Loading>
-}
+  const {
+    data: services,
+    isLoading,
+    refetch,
+  } = useQuery(["available", formattedDate], () =>
+    fetch(`http://localhost:5000/available?date=${formattedDate}`).then((res) =>
+      res.json()
+    )
+  );
+
+  if (isLoading) {
+    return <Loading />;
+  }
   return (
     <div>
       <h4 className="text-xl text-center text-secondary my-12">
@@ -23,6 +30,7 @@ const AvailableAppointments = ({ date }) => {
       </h4>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {services?.map((service) => (
+          // console.log(service)
           <Service
             key={service._id}
             service={service}
@@ -43,6 +51,3 @@ const AvailableAppointments = ({ date }) => {
 };
 
 export default AvailableAppointments;
-
-
-
