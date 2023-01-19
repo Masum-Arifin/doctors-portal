@@ -15,7 +15,8 @@ const Service = ({ service, setTreatment }) => {
           )}
         </p>
         <p>
-          {slots?.length} {slots?.length > 1 ? "Spaces Available" : "Space Available"} 
+          {slots?.length}{" "}
+          {slots?.length > 1 ? "Spaces Available" : "Space Available"}
         </p>
         <div className="card-actions justify-center">
           <label

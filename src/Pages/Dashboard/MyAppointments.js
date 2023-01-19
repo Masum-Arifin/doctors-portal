@@ -8,9 +8,19 @@ const MyAppointments = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/booking?patient=${user.email}`)
-        .then((res) => res.json())
-        .then((data) => setAppointments(data));
+      fetch(`http://localhost:5000/booking?patient=${user.email}`, {
+        method: "GET",
+        headers: {
+          autohrization: `Bearer ${localStorage.getItem("accessToken")}`,
+        },
+      })
+        .then((res) => {
+          console.log('res', res);
+          res.json();
+        })
+        .then((data) => {
+          setAppointments(data);
+        });
     }
   }, [user]);
   return (
@@ -25,6 +35,7 @@ const MyAppointments = () => {
               <th>Name</th>
               <th>Date</th>
               <th>Time</th>
+              <th>phone</th>
               <th>Treatment</th>
             </tr>
           </thead>
@@ -35,6 +46,7 @@ const MyAppointments = () => {
                 <td>{a.patientName}</td>
                 <td>{a.date}</td>
                 <td>{a.slot}</td>
+                <td>{a.phone}</td>
                 <td>{a.treatment}</td>
               </tr>
             ))}
