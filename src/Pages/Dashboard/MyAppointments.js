@@ -1,32 +1,44 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
+import { useNavigate } from "react-router-dom";
+import { signOut } from "firebase/auth";
 
 const MyAppointments = () => {
   const [appointments, setAppointments] = useState([]);
   const [user] = useAuthState(auth);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/booking?patient=${user.email}`, {
-        method: "GET",
-        headers: {
-          autohrization: `Bearer ${localStorage.getItem("accessToken")}`,
-        },
-      })
+      fetch(
+        `http://localhost:5000/booking?patient=${user.email}`,
+        {
+          method: "GET",
+          headers: {
+            "content-type": "application/json",
+            authorization: `bearer ${localStorage.getItem("accessToken")}`,
+          },
+        }
+      )
         .then((res) => {
-          console.log('res', res);
-          res.json();
+          if (res.status === 401 || res.status === 403) {
+            signOut(auth);
+            localStorage.removeItem("accessToken");
+            navigate("/");
+          }
+          return res.json();
         })
         .then((data) => {
+          console.log(data);
           setAppointments(data);
         });
     }
-  }, [user]);
+  }, [user, navigate, setAppointments]);
+
   return (
     <div>
-      <h2>My Appoint {appointments.length}</h2>
-
+      <h2>My Appointments: {appointments?.length}</h2>
       <div class="overflow-x-auto">
         <table class="table w-full">
           <thead>
@@ -35,7 +47,6 @@ const MyAppointments = () => {
               <th>Name</th>
               <th>Date</th>
               <th>Time</th>
-              <th>phone</th>
               <th>Treatment</th>
             </tr>
           </thead>
@@ -46,7 +57,6 @@ const MyAppointments = () => {
                 <td>{a.patientName}</td>
                 <td>{a.date}</td>
                 <td>{a.slot}</td>
-                <td>{a.phone}</td>
                 <td>{a.treatment}</td>
               </tr>
             ))}

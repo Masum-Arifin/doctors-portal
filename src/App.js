@@ -25,7 +25,6 @@ function App() {
           path="/appointment"
           element={
             <RequireAuth>
-              {" "}
               <Appointment />
             </RequireAuth>
           }
@@ -36,7 +35,6 @@ function App() {
           path="/dashboard"
           element={
             <RequireAuth>
-              {" "}
               <Dashboard />
             </RequireAuth>
           }

@@ -4,25 +4,27 @@ const useToken = (user) => {
   const [token, setToken] = useState("");
   
   useEffect(() => {
-  const email = user?.user?.email;
-    const currentUser = { email: email,};
+    const name = user?.user?.displayName;
+    const email = user?.user?.email;
+    const photo = user?.user?.photoURL;
+    const currentUser = { email: email, name: name, photo: photo};
     if (email) {
       fetch(`http://localhost:5000/user/${email}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",
+          "Access-Control-Allow-Origin": "*",
         },
-        body: JSON.stringify(currentUser),
+        body: JSON.stringify(currentUser)
       })
         .then((res) => res.json())
-        .then((data) => {
-          console.log("data inside useToken", data);
+        .then((data) => { 
           const accessToken = data.token;
           localStorage.setItem('accessToken', accessToken);
           setToken(accessToken);
         });
     }
-  }, [user]);
+  }, [token, user ]);
   return [token];
 };
 

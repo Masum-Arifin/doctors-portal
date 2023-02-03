@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
@@ -11,20 +11,23 @@ import { Link, useNavigate } from "react-router-dom";
 import useToken from "../../hooks/useToken";
 
 const SignUp = () => {
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth);
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+  const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+  const navigate = useNavigate();
+  const [token] = useToken(user || gUser);
+
+  useEffect(() => {
+    if (token || user || gUser) {
+      navigate("/");
+    }
+  }, [token, user, gUser, navigate]);
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
-  const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
-
-  const [updateProfile, updating, updateError] = useUpdateProfile(auth);
-
-  const [token] = useToken(user || gUser);
-  
-  const navigate = useNavigate();
 
   let signInError;
 
@@ -40,10 +43,6 @@ const SignUp = () => {
         </small>
       </p>
     );
-  }
-
-  if (token || user || gUser) {
-    navigate("/appointment");
   }
 
   const onSubmit = async (data) => {
